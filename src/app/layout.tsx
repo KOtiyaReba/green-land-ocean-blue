@@ -1,0 +1,38 @@
+import type { Metadata } from "next";
+import type { ReactNode } from "react";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import { company } from "@/data/company";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+
+const inter = Inter({ subsets: ["latin"], display: "swap" });
+
+export const metadata: Metadata = {
+  title: {
+    default: company.name,
+    template: `%s | ${company.name}`,
+  },
+  description:
+    "Manufacture and distribution of Diesel Exhaust Fluid (DEF/AdBlue), based in Ernakulam, Kerala, with a growing network across India.",
+};
+
+export default function RootLayout({ children }: { children: ReactNode }) {
+  return (
+    <html lang="en">
+      <body className={`${inter.className} flex min-h-screen flex-col`}>
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-50 focus:rounded-md focus:bg-white focus:px-4 focus:py-2"
+        >
+          Skip to content
+        </a>
+        <Header />
+        <main id="main" className="flex-1">
+          {children}
+        </main>
+        <Footer />
+      </body>
+    </html>
+  );
+}
