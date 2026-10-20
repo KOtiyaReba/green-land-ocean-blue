@@ -6,6 +6,10 @@
   --color-brand-green-dark: #1a6b42;
   --color-surface: #f4f7f6;
 }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
 
 body {
   background: #ffffff;

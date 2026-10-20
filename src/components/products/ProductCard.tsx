@@ -20,7 +20,7 @@ export default function ProductCard({ product }: { product: Product }) {
       </div>
       <h3 className="mt-4 text-lg font-semibold text-brand-navy">{product.name}</h3>
       <p className="mt-2 flex-1 text-sm text-gray-600">{product.description}</p>
-      <Button href="/contact" variant="secondary" className="mt-5 self-start">
+      <Button href="/#contact" variant="secondary" className="mt-5 self-start">
         Enquire
       </Button>
     </article>
