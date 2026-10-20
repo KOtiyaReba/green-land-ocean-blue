@@ -4,6 +4,7 @@ import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
 import SectionHeading from "@/components/ui/SectionHeading";
 import ProductCard from "@/components/products/ProductCard";
+import WhatsAppLink from "@/components/ui/WhatsAppLink";
 
 export default function HomePage() {
   return (
@@ -26,6 +27,7 @@ export default function HomePage() {
             <Button href="/contact" variant="secondary">
               Contact Us
             </Button>
+            <WhatsAppLink>WhatsApp Us</WhatsAppLink>
           </div>
         </Container>
       </section>

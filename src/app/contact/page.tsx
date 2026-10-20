@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { company } from "@/data/company";
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
+import WhatsAppLink from "@/components/ui/WhatsAppLink";
 
 export const metadata: Metadata = {
   title: "Contact & Distributor Registration",
@@ -34,7 +35,9 @@ export default function ContactPage() {
               <dd className="text-gray-700">{company.contact.address}</dd>
             </div>
           </dl>
-
+         <div className="mt-6">
+            <WhatsAppLink>Chat on WhatsApp</WhatsAppLink>
+          </div>
           <p className="mt-6 text-sm text-gray-600">
             Contact categories: {company.contactCategories.join(", ")}.
           </p>

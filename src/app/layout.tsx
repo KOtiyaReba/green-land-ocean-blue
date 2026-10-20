@@ -5,6 +5,7 @@ import "./globals.css";
 import { company } from "@/data/company";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import FloatingWhatsApp from "@/components/layout/FloatingWhatsApp";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           {children}
         </main>
         <Footer />
+        <FloatingWhatsApp />
       </body>
     </html>
   );
